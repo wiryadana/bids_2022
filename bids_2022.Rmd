@@ -1,0 +1,67 @@
+---
+title: '"Indonesian COVID-19 Research Output: Focusing on "who" instead of "what"'
+author: "Kadek Adit Wiryadana, Made Vidyasti Laksita Wijaya"
+date: "`r Sys.time()`"
+output: 
+  bookdown::html_document2:
+    number_sections: false
+    code_folding: hide
+bibliography: ref.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*--- see [abstract](#abs) at the end of the document ---*
+
+---
+
+### Introduction
+
+
+
+### Methods
+
+#### Search strategy and study inclusion
+
+#### Data extraction and synthesis
+
+#### Data Analysis
+```{r library, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(googlesheets4)
+library(gtsummary)
+library(meta)
+library(metafor)
+library(PRISMA2020)
+library(DT)
+library(robvis)
+```
+
+### Results
+
+```{r read_data, echo=FALSE, message=FALSE, warning=FALSE}
+data <- read_csv("COVID_indonesia.csv")
+```
+
+
+### Discussion
+*--- on construction ---*
+
+### Disclosure
+*--- on construction ---*
+
+### References
+<div id="refs"></div>
+
+---
+
+#### Abstract {#abs}
+
+---
+
+```{bash}
+cp bids_2022.html index.html
+```
+
